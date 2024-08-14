@@ -16,7 +16,7 @@ function customRender(reactElement, container) {
     // Append the created DOM element to the container
     container.appendChild(domElement);
   }
-  
+  //ye connevvert hota hai parsing
   const reactElement = {
     type: 'a',
     props: {
@@ -25,7 +25,8 @@ function customRender(reactElement, container) {
     },
     children: 'Click me to visit GOOGLE',
   };
-  
+
+
   const mainContainer = document.querySelector('#root');
   
   customRender(reactElement, mainContainer);
