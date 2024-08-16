@@ -2,15 +2,16 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [color, setColor] = useState("olive");
+  const [color, setColor] = useState('olive');
 
   return (
     <>
-      <div className='w-full h-screen duration-200' style={{ backgroundColor: color }}>
+      <div className="w-full h-screen duration-200" style={{ backgroundColor: color }}>
         <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-4'>
           <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-3 rounded-2xl">
             <button 
               onClick={() => {
+                console.log(color)
                 console.log('Red button clicked');
                 setColor("red");
               }} 
@@ -36,6 +37,7 @@ function App() {
               style={{ backgroundColor: "blue" }}>
               Blue
             </button>
+            
           </div>
         </div>
       </div>
